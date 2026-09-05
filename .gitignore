@@ -1,6 +1,5 @@
-# Transkrypcje (materiały źródłowe)
-*.html
-!strona/**/*.html
+# Transkrypcje (materiały źródłowe — zostają lokalnie)
+*-transkrypcja.html
 transcript_*.txt
 view_*.txt
 _clean/
