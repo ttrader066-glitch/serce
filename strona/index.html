@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twoje Serce — oparty na dowodach przewodnik po zdrowiu układu krążenia</title>
+<meta name="description" content="Ciśnienie krwi, tętnice, stres i aspiryna — co mówi nauka. Przewodnik oparty na metaanalizach i badaniach klinicznych, z weryfikacją popularnych twierdzeń z internetu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230F766E'><path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/></svg>">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="#0F766E"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      Twoje Serce
+    </a>
+    <button class="nav-burger" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d0d0d" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <div class="nav-links" id="navlinks">
+      <a href="cisnienie.html">Nadciśnienie</a>
+      <a href="tetnice.html">Tętnice</a>
+      <a href="stres.html">Stres</a>
+      <a href="aspiryna.html">Aspiryna</a>
+      <a href="mity.html">Mity i spory</a>
+      <a href="zrodla.html">Źródła</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="kicker"><span class="dot"></span>Oparte na dowodach naukowych</span>
+    <h1>Co nauka naprawdę mówi o Twoim sercu</h1>
+    <p class="lead">
+      Ciśnienie krwi, miażdżyca, stres i aspiryna. Zebraliśmy najpopularniejsze porady
+      krążące w internecie — i sprawdziliśmy każdą z nich w metaanalizach i badaniach
+      klinicznych. Bez uproszczeń, bez straszenia, bez cudownych tabletek.
+    </p>
+    <div class="hero-meta">
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        20 analizowanych materiałów źródłowych
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        50+ cytowań w PubMed
+      </span>
+      <span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        Aktualizacja: wrzesień 2026
+      </span>
+    </div>
+  </div>
+  <svg class="ekg-line" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,30 L180,30 L210,30 L220,12 L232,48 L244,30 L300,30 L330,30 L340,14 L352,46 L364,30 L520,30 L550,30 L560,10 L572,50 L584,30 L700,30 L730,30 L740,13 L752,47 L764,30 L900,30 L930,30 L940,11 L952,49 L964,30 L1200,30"
+          fill="none" stroke="#0F766E" stroke-width="1.5" opacity="0.35"/>
+  </svg>
+</header>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">Liczby, które zmieniają perspektywę</p>
+    <div class="stat-band">
+      <div class="stat-cell">
+        <div class="n">−5 mmHg</div>
+        <div class="d">tyle obniżenia ciśnienia skurczowego wystarczy, by zmniejszyć ryzyko dużego zdarzenia sercowo-naczyniowego o <strong>12%</strong> — już w pierwszym roku leczenia.</div>
+        <div class="src">Nat Med 2026 · BPLTTC, 51 badań, 358 642 osoby</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n">−8,24 mmHg</div>
+        <div class="d">średnia redukcja ciśnienia skurczowego dzięki treningowi izometrycznemu — najskuteczniejszej pojedynczej formie aktywności na ciśnienie.</div>
+        <div class="src">Br J Sports Med 2023 · 270 badań, 15 827 osób</div>
+      </div>
+      <div class="stat-cell">
+        <div class="n">≈ 0</div>
+        <div class="d">tyle korzyści przynosi nattokinaza w prewencji miażdżycy: 3 lata suplementacji, 265 osób — żaden mierzalny efekt na tętnice ani ciśnienie.</div>
+        <div class="src">Eur J Prev Cardiol 2023 · badanie z randomizacją</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">Działy tematyczne</p>
+    <h2>Zacznij od tego, co Cię interesuje</h2>
+    <p class="section-lead">Każdy dział łączy praktyczne porady z weryfikacją naukową: co działa, co nie działa i skąd to wiemy.</p>
+
+    <div class="cat-list">
+      <a class="cat-row" href="cisnienie.html">
+        <div class="cat-num">01</div>
+        <div class="cat-body">
+          <h3>Nadciśnienie — przyczyny, pomiar, obniżanie</h3>
+          <p>12 najczęstszych przyczyn podwyższonego ciśnienia, 10 błędów przy pomiarze oraz metody obniżania potwierdzone metaanalizami: od treningu izometrycznego po dietę DASH.</p>
+        </div>
+        <span class="cat-tag">7 artykułów źródłowych</span>
+      </a>
+
+      <a class="cat-row" href="tetnice.html">
+        <div class="cat-num">02</div>
+        <div class="cat-body">
+          <h3>Tętnice i miażdżyca — czy da się „wyczyścić” naczynia?</h3>
+          <p>Jak naprawdę powstają blaszki miażdżycowe, dlaczego „sprawni ludzie też mają zawały” i co sądzą o „czyszczeniu tętnic” badania — od witaminy K2 po nattokynazę.</p>
+        </div>
+        <span class="cat-tag">8 artykułów źródłowych</span>
+      </a>
+
+      <a class="cat-row" href="stres.html">
+        <div class="cat-num">03</div>
+        <div class="cat-body">
+          <h3>Stres i „ciśnienie oporne na leki”</h3>
+          <p>Co przewlekły stres robi z naczyniami, dlaczego kortyzol podtrzymuje wysokie ciśnienie i które techniki — od oddychania po medytację — mają potwierdzone działanie.</p>
+        </div>
+        <span class="cat-tag">Dział w całości o stresie</span>
+      </a>
+
+      <a class="cat-row" href="aspiryna.html">
+        <div class="cat-num">04</div>
+        <div class="cat-body">
+          <h3>Aspiryna — prawda i mity o „małej białej tabletce”</h3>
+          <p>Kiedy aspiryna ratuje życie, a kiedy szkodzi? Wyniki trzech przełomowych badań (ASPREE, ASCEND, ARRIVE) w pigułce — i dlaczego prewencja pierwotna to nie to samo co wtórna.</p>
+        </div>
+        <span class="cat-tag">3 badania kluczowe</span>
+      </a>
+
+      <a class="cat-row" href="mity.html">
+        <div class="cat-num">05</div>
+        <div class="cat-body">
+          <h3>Mity i spory — najodważniejsze twierdzenia kontra badania</h3>
+          <p>„Sól niewinna”, „boczek idealny przy nadciśnieniu”, „keto wygrywa z DASH”, „cholesterol to strażak”. Zestawienie najodważniejszych tez z filmów z wynikami randomizowanych badań — co się broni, a co nie.</p>
+        </div>
+        <span class="cat-tag">316 twierdzeń przeanalizowanych</span>
+      </a>
+
+      <a class="cat-row" href="zrodla.html">
+        <div class="cat-num">06</div>
+        <div class="cat-body">
+          <h3>Bibliografia i metodologia</h3>
+          <p>Pełna lista źródeł z numerami PMID, opis procedury weryfikacji twierdzeń oraz autorski przegląd 20 materiałów wideo stanowiących punkt wyjścia tej strony.</p>
+        </div>
+        <span class="cat-tag">50+ pozycji</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">Jak czytamy dowody</p>
+    <h2>Każde twierdzenie dostaje swój werdykt</h2>
+    <p class="section-lead" style="margin-bottom: 34px;">
+      Popularne filmy o zdrowiu mieszają rzetelne informacje z przesadą. Nie odrzucamy ich w całości —
+      rozbieramy na pojedyncze twierdzenia i każdy oceniamy osobno, według hierarchii dowodów naukowych.
+    </p>
+    <div class="grid-2">
+      <div class="evi">
+        <div class="evi-head"><span class="badge badge-ok">Potwierdzone</span></div>
+        <p style="color: var(--ink-2); font-size: 14.5px;">Twierdzenie zgodne z aktualnymi metaanalizami badań z randomizacją lub dużymi badaniami obserwacyjnymi. Podajemy efekt z przedziałem ufności i źródło.</p>
+      </div>
+      <div class="evi">
+        <div class="evi-head"><span class="badge badge-warn">Częściowo prawdziwe</span></div>
+        <p style="color: var(--ink-2); font-size: 14.5px;">Ziarno prawdy jest, ale efekt jest przesadzony, dotyczy innej grupy lub dowody są słabsze, niż sugeruje prezentacja. Wyjaśniamy co dokładnie.</p>
+      </div>
+      <div class="evi">
+        <div class="evi-head"><span class="badge badge-danger">Nieprawdziwe</span></div>
+        <p style="color: var(--ink-2); font-size: 14.5px;">Twierdzenie sprzeczne z wynikami badań kontrolowanych. Podajemy badanie, które je obaliło — zwykle z randomizacją i grupą placebo.</p>
+      </div>
+      <div class="evi">
+        <div class="evi-head"><span class="badge badge-neutral">Niewystarczające dane</span></div>
+        <p style="color: var(--ink-2); font-size: 14.5px;">Hipoteza obiecująca, ale badań na ludziach za mało, by cokolwiek obiecywać. Uczciwie mówimy „nie wiemy jeszcze”.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="disclaimer">
+      <span class="ic">ⓘ</span>
+      <div>
+        <strong>Ta strona nie zastępuje porady lekarskiej.</strong>
+        Wszystkie treści mają charakter edukacyjny i opierają się na cytowanych badaniach naukowych.
+        Decyzje o leczeniu, dawkowaniu leków (w tym aspiryny) i diagnostce podejmuj wyłącznie z lekarzem.
+        Materiały źródłowe (filmy i ich autorzy) są przywoływane w celach edukacyjnych i analizie krytycznej —
+        pełna lista w bibliografii.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="index.html">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#0F766E"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        Twoje Serce
+      </a>
+      <p>
+        Niezależny przewodnik po zdrowiu układu krążenia. Twierdzenia zaczerpnięte z popularnych
+        materiałów wideo są tu weryfikowane wobec peer-reviewed literatury naukowej — z numerami
+        PMID przy każdym fakcie.
+      </p>
+    </div>
+    <div>
+      <h4>Nawigacja</h4>
+      <div class="footer-links">
+        <a href="cisnienie.html">Nadciśnienie</a>
+        <a href="tetnice.html">Tętnice i miażdżyca</a>
+        <a href="stres.html">Stres i ciśnienie</a>
+        <a href="aspiryna.html">Aspiryna</a>
+        <a href="mity.html">Mity i spory</a>
+        <a href="zrodla.html">Bibliografia</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Twoje Serce · projekt edukacyjny · 2026</span>
+    <span>Ostatnia aktualizacja treści: wrzesień 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>

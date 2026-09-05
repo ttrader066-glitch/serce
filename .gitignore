@@ -1,0 +1,11 @@
+# Transkrypcje (materiały źródłowe)
+*.html
+!strona/**/*.html
+transcript_*.txt
+view_*.txt
+_clean/
+ekstrakcja-twierdzen.json
+
+# System
+.DS_Store
+Thumbs.db
